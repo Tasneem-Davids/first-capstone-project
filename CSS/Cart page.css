@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: auto;
+    text-align: center;
+    margin: 0;
+}
+
+.navbar {
+    width: auto;
+    padding: 0;
+    text-decoration: none;
+}
+
+.navbar-item a {
+    text-decoration: none;
+}
+
+.img-thumbnail1 {
+    width: 200px;
+    height: auto;
+    float: left;
+    margin: 20px;
+}
+
+.navbar a {
+    font-family: sans-serif;
+    font-style: oblique;
+}
+
+h1 {
+    text-align: center;
+    font-family: serif;
+    font-style: oblique;
+    color: maroon;
+    font-size: 50px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    width: fit-content;
+    height: fit-content;
+    max-height: fit-content;
+    padding: 5px;
+    margin: 40px auto 50px;
+    margin-bottom: 60px;
+}
+
+.box4 {
+    width: 400px;
+    text-decoration: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box4 a {
+    text-decoration: none;
+    font-style: oblique;
+}
+
+.box3 {
+    float: inline-start;
+}
+
+p {
+    margin-top: 30px;
+    font-family: serif;
+    font-style: oblique;
+    color: crimson;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.form-group {
+    width: auto;
+    margin: 10px;
+    padding: 10px;
+    vertical-align: right;
+}
+
+form {
+    color: maroon;
+}
+
+.radio {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.btn2{
+    margin-bottom: 100px;
+    border-radius: 5px;
+    border: none;
+    padding:3px;
+}

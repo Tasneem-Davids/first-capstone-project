@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../CSS/Cart page.css">
+    </head>
+
+    <body onload="showItems()">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+            <a href="./Online store home page.html" class="navbar-brand"><img src="../images/Catalogue logo.png" height="60px" style="border-radius: 50%; margin-left: 6px; margin-top: 3px; margin-bottom: 4px;"></a>
+            <span class="navbar-text" style="font-family: Brush Script MT, Brush Script Std, cursive;">Brace Yourself.</span>
+            <button class="navbar-toggler ml-auto">
+                <span class="navbar-toggler-icon" data-toggle="collapse" data-target="#navbarmenu"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarmenu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Online store home page.html"style="color: white">Home</a>
+                        <!--This link will take you to the home page I designed, and the navbar-brand pic will do so as well.-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./About us.html" style="color: white;">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Online store Catalogue Page.html" style="color: white;">Catalogue Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: white;">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: white;">Terms &amp; Conditions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Contact Page.html" style="color: white;">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <br>
+
+        <img src="../images/shopping cart.jpg" class="img-thumbnail1 img-responsive rounded-circle" alt="cart" style="float: right;">
+
+        <h1 class="box">
+            <b>Your Cart.</b>
+        </h1>
+
+        <table style="width: 200px"> 
+            <thead>
+                <tr>
+                    <td style="margin-left: 10px;"><b>Total:</b></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="Total"></tr>
+            </tbody>
+        </table>
+
+        <table class="table" style="width: 500px; margin-left: 390px;">
+            <thead>
+                <tr>
+                    <td>Product</td>
+                    <td></td>
+                    <td>Price</td>
+                    <td><b>X</b></td>
+                </tr>
+            </thead>
+            <tbody id="cart">
+            </tbody>
+        </table>
+
+        <br>
+
+        <button class="btn btn-primary" id="AllClear" onclick="allClear()" style="margin-top: 50px; margin-bottom: 150px;">Clear Cart</button>
+
+        <br>
+
+        <form class="box4 col-md-4">
+            <div id="Option" class="form-group">
+                <ul>
+                    <li>
+                <label for="Delivery option" style="font-size:30px; font-style:oblique; font-family:italics;">
+                    <h2>Delivery Options:</h2>
+                </label>
+                <ul class="dropdown">
+                    <li>
+                        <div id="DeliverBtn"><img src="../images/deliver.png" height="30px" style="margin-left:5px;"></div>
+                </li>
+                <li>
+                        <input type="button" class="btn btn-primary" id="CollectBtn" style="font-size: 15px; margin-top: 6px; background-color: rgb(84, 231, 231);" value="Collect"><img src="../images/collection.png" height="30px" style="margin-right: 5px;"></button>
+                </li>
+            </ul>
+            <li>
+                <h2 style="font-style:oblique; font-family:italic">Have any coupons?</h2>
+                <label id="coupon code">Enter Coupon Code:</label>
+                <ul class="dropdown">
+                <li><input type="text" class="form-control" id="EnterCouponCode" placeholder="Code"></li>
+                <br>
+                <div id="CouponBtn"></div>
+                </ul>
+            </li>
+            <br>
+                <button class="btn2" id="submitBtn" style="border: solid 2px maroon; background-color: white; color: maroon"><b>Confirm Order</b><img src="../images/thumbs up.png" height="28px" style="margin-left: 5px;"></button>
+            </div>
+        </body>
+    </body>
+</html><div class="container" style="margin-top: 200px;"></div>
+<p style="font-size: 20px; color: maroon">
+    <b>If you're interested in placing an order, leave your info and we'll get back to you!</b>
+</p>
+
+<form class="box3 col-md-4" id="form" style="margin: auto; margin-bottom: 100px">
+    <div class="form-group">
+        <label for="First name">First name</label>
+        <input type="text" class="form-control" id="First name" placeholder="Name">
+    </div>
+    <div class="form-group">
+        <label for="Surname">Surname</label>
+        <input type="text" class="form-control" id="Surname" placeholder="Surname">
+    </div>
+    <div class="form-group">
+        <label for="Email">E-mail</label>
+        <input type="text" class="form-control" id="e-mail" placeholder="e-mail">
+        <small id="emailHelp" class="form-text text-muted">This info stays between us ;)</small>
+    </div>
+    <div class="form-group">
+        <label for="contact number">Contact number</label>
+        <input type="text" class="form-control" id="contactnumber">
+    </div>
+    <div class="form-check">
+        <input type="checkbox" id="Accept Terms" class="form-check-input" style="text-align: center;">
+        <label for="Accept Terms">Accept Terms &amp; Conditions</label>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-danger">Submit</button>
+
+    <br>
+
+    <p style="font-size: 20px; color: maroon; margin-top: 70px;">
+        <b>Would you recommend our products to your friends and family ?</b>
+    </p>
+    <br>
+    <div class="radio-group">
+        <label class="radio">
+            <input type="radio" value="Yes" name="Yes">
+            <span style="font-size: 15px;">
+                Yes :)</span>
+        </label>
+        <label class="radio">
+            <input type="radio" value="No" name="No">
+            <span style="font-size: 15px;">No :(</span>
+        </label>
+        <label class="radio">
+            <input type="radio" value="Maybe" name="Maybe">
+            <span style="font-size: 15px;">Maybe ;)</span>
+        </label>
+    </div>
+</form>
+</div>
+
+<br>
+
+<table class="table">
+<thead class="head">
+    <tr>
+        <th scope="col" style="font-style: oblique; font-family: serif; background-color: maroon; color: white;">Hey, if you love our selections, why not follow us on social media and stay in the loop! ;)</th>
+    </tr>
+</thead>
+<tbody class="body">
+    <tr class="row ml-auto" style="text-decoration: none;">
+        <td>
+            <a href="#"><img src="../images/twitter.png" style="height: 25px; margin-top: 5px;"></a>
+        </td>
+        <td>
+            <a href="#"><img src="../images/instagram.jpg" style="height: 35px;"></a>
+        </td>
+        <td>
+            <a href="#"><img src="../images/facebook.png" style="height: 38px; margin-top: -1px;"></a>
+        </td>
+        <td>
+            <a href="#"><img src="../images/snapchat.png" style="height: 27px; margin-top: 5px;"></a>
+        </td>
+        <td>
+            <a href="#"><img src="../images/youtube.png" style="height: 35px; margin-top: 1px;"></a>
+        </td>
+    </tr>
+</tbody>
+</table>
+
+<script src="../JS/cart.js"></script>
+</body>
+</html>

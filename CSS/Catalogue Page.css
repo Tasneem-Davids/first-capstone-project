@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: auto;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: serif;
+    font-style: oblique;
+    color: maroon;
+    font-size: 50px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    width: fit-content;
+    padding: 5px;
+    background-color: white;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+.box2 {
+    color: white;
+    border: maroon;
+    background: maroon;
+    font-style: oblique;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 22px;
+    margin: 20px auto 150px;
+    padding: 3px;
+}
+
+h2 {
+    font-family: serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: maroon;
+}
+
+.my-container {
+    margin-top: 250px;
+    margin-bottom: 30px;
+}
+
+form {
+    color: maroon;
+}
+
+table {
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.form-group {
+    width: auto;
+    margin: 10px;
+    padding: 10px;
+    vertical-align: right;
+}
+
+.navbar-brand {
+    height: 70px;
+    margin: 9px;
+}
+
+p {
+    margin-top: 30px;
+    font-family: serif;
+    font-style: oblique;
+    color: crimson;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.navbar a {
+    font-family: sans-serif;
+    font-style: oblique;
+}
+
+.container2 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: fit-content;
+}
+
+.navbar {
+    width: auto;
+    height: fit-content;
+    padding: 0;
+    text-decoration: none;
+}
+
+.navbar-item a {
+    text-decoration: none;
+}
+.radio {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    display: inline-block;
+    vertical-align: middle;
+}
+.box3 {
+    float: inline-start;
+}
+.zoom {
+    padding: 50px;
+    transition: 2s;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+}

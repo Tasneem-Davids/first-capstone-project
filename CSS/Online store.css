@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    text-align: center;
+    margin:0px;
+}
+
+.content-wrapper{
+    width: 100%;
+    margin: 0px;
+
+}
+
+.content-wrapper img{
+    width: 100%;
+    opacity: 75%;
+    margin-top: -10px;
+}
+
+.text-wrapper{
+    width: 100%;
+    position: relative;
+    margin-top: -40%;   
+}
+
+.text-wrapper h1{
+    text-align: right;
+    color: crimson;
+    font-size: 10vw;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    margin-right: 140px;
+} 
+
+.text-wrapper p{
+    text-align: right;
+    font-size: 4vw;
+    color: rgb(105, 22, 39);
+    font-family: serif;
+    font-style: oblique;
+    margin-right: 5px;
+    margin-bottom: 50px;
+}
+
+.box{
+    padding: 20px;
+    text-align: center;
+    background: rgb(230, 5, 50);
+}
+
+.navbar{
+    padding: 1px;
+}
+
+.navbar-brand{
+    margin:0px;
+}
+
+.navbar-text{
+    margin:7px;
+    font-style: oblique;
+    font-family: serif;
+    padding: 4px;
+    border: 2px solid crimson;
+}
+
+.nav-link:hover{
+    color: crimson;
+}
+
+.navbar a{
+    font-family: sans-serif;
+    font-style: oblique;
+}
+
+.btn{
+    background-color: transparent;
+    border: 2px solid crimson; 
+    border-radius: 0px;
+    color: crimson;
+    text-decoration: none;
+    margin-left:50%;
+    margin-right:290px;
+}
+
+.btn:hover{
+    background-color: transparent;
+    border: 3px solid crimson;
+    border-radius: 2px;
+}
+
+a{
+    text-decoration: none;
+    color: maroon;
+    font-family: serif;
+    font-weight: bold;
+}
+
+a:hover{
+    color: maroon;
+    text-decoration: none;
+}
